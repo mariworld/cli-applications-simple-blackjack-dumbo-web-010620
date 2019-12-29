@@ -8,6 +8,10 @@ def deal_card
 end
 
 def display_card_total(total)
+<<<<<<< HEAD
+=======
+  total
+>>>>>>> b5bf7a0fcc34e9c4ed1dcea6b5886c0c71393117
   puts "Your cards add up to #{total}"
 end
 
@@ -60,6 +64,7 @@ end
 #####################################################
 
 def runner
+<<<<<<< HEAD
   total = 10
   welcome
   until total >= 21
@@ -68,4 +73,14 @@ def runner
   end
   display_card_total(total)
   end_game(total)
+=======
+  total = 0
+  until total >= 21
+    welcome
+    initial_round
+    total = initial_round
+    final_total = hit?(total)
+  end
+  display_card_total(final_total)
+>>>>>>> b5bf7a0fcc34e9c4ed1dcea6b5886c0c71393117
 end
